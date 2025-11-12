@@ -1,7 +1,3 @@
-import { NextResponse } from "next/server";
-
-export const revalidate = 600; // cache for 10 min
-
 export async function GET() {
   try {
     const pageId = process.env.FB_PAGE_ID!;
