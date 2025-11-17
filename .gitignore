@@ -65,3 +65,4 @@ prisma/migrations/
 # Prevent lockfiles from other package managers
 pnpm-lock.yaml
 yarn.lock
+node_modules/
