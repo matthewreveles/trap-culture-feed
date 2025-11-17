@@ -16,20 +16,52 @@ yarn-error.log*
 pnpm-debug.log*
 *.log
 
-# OS
+# OS files
 .DS_Store
 
-# Editor junk
+# Editor folders
 .vscode/
 .idea/
 
-# Build cache
+# Build & cache directories
 dist/
 .cache/
 .vercel/
 
-# Generated types
+# TypeScript build info
 *.tsbuildinfo
 
-# Prevent committing large binary droplets
+# Prisma migrations
+prisma/migrations/
+
+# Turbo, Next.js, SWC, and bundler caches
+.turbo/
+.swc/
+.next/cache/
+
+# Prevent committing binary blobs
 *.swc
+*.wasm
+*.node
+*.bin
+
+# Prevent committing macOS metadata
+**/.DS_Store
+**/._*
+
+# Prevent accidental uploads of compiled SWC engines
+**/swc-*/**
+**/next-swc*/**
+**/next-swc-*/**
+
+# Prevent large binary asset drops
+*.zip
+*.tar
+*.gz
+*.tgz
+*.7z
+*.rar
+
+# Prevent lockfiles from other package managers
+pnpm-lock.yaml
+yarn.lock
