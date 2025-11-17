@@ -1,0 +1,35 @@
+# Next.js build output
+.next/
+out/
+
+# Node modules
+node_modules/
+
+# Env files
+.env
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS
+.DS_Store
+
+# Editor junk
+.vscode/
+.idea/
+
+# Build cache
+dist/
+.cache/
+.vercel/
+
+# Generated types
+*.tsbuildinfo
+
+# Prevent committing large binary droplets
+*.swc
