@@ -6,10 +6,25 @@ export const metadata: Metadata = {
   description: "Facebook/Instagram photo feed for Trap Culture",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className="
+          bg-black 
+          text-white 
+          min-h-screen 
+          antialiased
+          selection:bg-[#E56000]/40 
+          selection:text-white
+        "
+      >
+        {children}
+      </body>
     </html>
   );
 }
