@@ -1,16 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Allow Facebook CDN hosts used by your page photos
     remotePatterns: [
+      // Covers all Facebook/Instagram CDN clusters
       {
         protocol: "https",
-        hostname: "scontent-phx1-1.xx.fbcdn.net",
+        hostname: "*.fbcdn.net",
         pathname: "/**",
       },
       {
         protocol: "https",
-        hostname: "scontent-lax3-2.xx.fbcdn.net",
+        hostname: "*.fna.fbcdn.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "lookaside.facebook.com",
         pathname: "/**",
       },
     ],
