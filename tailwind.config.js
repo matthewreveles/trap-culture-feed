@@ -1,22 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
-    "./ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      colors: {
-        // Phoenix Suns gradient colors (for re-use)
-        sunsPurple: "#5A2A82",
-        sunsOrange: "#E56000",
-      },
-    },
+    extend: {},
   },
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/forms"),
-  ],
+  plugins: [],
 };

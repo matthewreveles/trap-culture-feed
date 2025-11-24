@@ -1,28 +1,15 @@
-import "./globals.css";
-import type { Metadata } from "next";
+import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Trap Culture Feed",
-  description: "Facebook/Instagram photo feed for Trap Culture",
+  title: 'Trap Culture • Past Events',
+  description: 'Past Trap Culture events photo archive.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className="
-          bg-black 
-          text-white 
-          min-h-screen 
-          antialiased
-          selection:bg-[#E56000]/40 
-          selection:text-white
-        "
-      >
+    <html lang='en'>
+      <body className='bg-black text-white min-h-screen antialiased'>
         {children}
       </body>
     </html>

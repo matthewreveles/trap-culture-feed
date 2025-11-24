@@ -2,20 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Trap Culture styling */
+/* Base style */
 body {
-  background-color: #000;
-  color: #fff;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
+  @apply bg-black text-white;
 }
 
-/* Optional: Improve image rendering quality */
+/* Modal fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Smooth image loading */
 img {
-  image-rendering: auto;
+  @apply transition-opacity duration-300;
 }
 
-/* Smooth scroll across the site */
-html {
-  scroll-behavior: smooth;
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
